@@ -1,0 +1,123 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/images/banner/b1.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="{% static 'app/images/banner/b2.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="{% static 'app/images/banner/b3.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="{% static 'app/images/banner/b4.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock banner-slider    %}
+
+{% block information %}
+
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">
+            Curd is obtained by coagulating milk in a sequential process called curdling. It can be a final dairy product or the first stage in cheesemaking. The coagulation can be caused by adding rennet, a culture, or any edible acidic substance such as lemon juice or vinegar, and then allowing it to coagulate.
+            The increased acidity causes the milk proteins (casein) to tangle into solid masses, or curds. Milk that has been left to sour (raw milk alone or pasteurized milk with added lactic acid bacteria) will also naturally produce curds, and sour milk cheeses are produced this way.
+        </small>
+    </div>
+</div>
+{% endblock information %}
+
+{% block main-container %}
+    <div class="container">
+
+    </div>
+{% endblock main-container %}
+
+{% block main-content %}
+    <div class="container">
+        <h2 class="text-center">Dairy Products</h2>
+        <br></br>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-duration="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/product/buffalo-ghee.png' %}" class="img-responsive center-block" alt="">
+                            <p class="mlkpro">Ghee</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-duration="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk curdbgpro">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/product/curd-total.png' %}" class="img-responsive center-block" alt="">
+                            <p class="mlkpro">Curd</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+                <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-duration="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                    <div class="goodnesssec buttermilk buttermilk">
+                        <a href="#">
+                            <div class="goodnessseccont text-center">
+                                <img src="{% static 'app/images/product/Kulfi.png' %}" class="img-responsive center-block" alt="">
+                                <p class="mlkpro">Kulfi</p>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>        
+        </div>
+
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-duration="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/product/milk-shake-chocolate.png' %}" class="img-responsive center-block" alt="">
+                            <p class="mlkpro">Milkshake</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-duration="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk curdbgpro">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/product/cow-milk.png' %}" class="img-responsive center-block" alt="">
+                            <p class="mlkpro">Milk</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+                <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-duration="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                    <div class="goodnesssec buttermilk buttermilk">
+                        <a href="#">
+                            <div class="goodnessseccont text-center">
+                                <img src="{% static 'app/images/product/icbars.png' %}" class="img-responsive center-block" alt="">
+                                <p class="mlkpro">Icbars</p>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>        
+        </div>
+
+
+    </div>
+    <br></br> 
+{% endblock main-content %}
