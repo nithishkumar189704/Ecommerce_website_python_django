@@ -21,6 +21,7 @@ class Product(models.Model):
     composition = models. TextField(default='')
     prodapp = models.TextField(default='')
     category = models.CharField(choices=CATEGORY_CHOICES, max_length=2)
-    Product_image = models.ImageField(upload_to='product')
+    product_image = models.ImageField(upload_to='product')
+    
     def __str__(self):
         return self.title
