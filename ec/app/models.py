@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 
 CATEGORY_CHOICES=(
-    ('CR', 'curd'),
-    ('Ml', 'Milk'),
+    ('CR', 'Curd'),
+    ('ML', 'Milk'),
     ('LS', 'Lassi'),
     ('MS', 'Milkshake'),
     ('PN', 'Paneer'),
