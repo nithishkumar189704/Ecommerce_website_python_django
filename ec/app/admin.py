@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.html import format_html
-from .models import Product
+from .models import Product, Customer
 
 @admin.register(Product)
 class ProductModelAdmin(admin.ModelAdmin):
@@ -12,3 +12,8 @@ class ProductModelAdmin(admin.ModelAdmin):
         return "No Image"
 
     display_product_image.short_description = 'Product Image'  # Column name in admin panel
+
+
+@admin.register(Customer)
+class CustomerModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'user','locality','city','state','zipcode']
